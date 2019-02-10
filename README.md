@@ -1,7 +1,7 @@
 ### Install
 
 ```bash
-git clone https://github.com/dev-vignesh/reactstrap-collapse.git
+git clone https://github.com/devevignesh/reactstrap-collapse.git
 ```
 
 Then you can run it by:
