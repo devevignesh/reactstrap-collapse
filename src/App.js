@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import { Collapse, CardBody, Card, Container } from 'reactstrap';
 
 const Collapsible = (props) => {  
-  const [collapse, setCount] = useState(false);
+  const [collapse, onToggle] = useState(false);
       
   return (
-      <div className="">
-        <ul class="list-group">
+      <div>
+        <ul className="list-group">
           <li
             className={`list-group-item ${collapse ? "active" : ""}`}
-            onClick={() => setCount(!collapse)}
+            onClick={() => onToggle(!collapse)}
           >
           {props.question}
             <i className={`float-right fa ${collapse ? "fa-angle-up" : "fa-angle-down"}`}  />
